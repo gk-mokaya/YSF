@@ -1,0 +1,152 @@
+/* Custom Responsive and Optimization Styles for YSF Website */
+
+/* Improve mobile menu toggle visibility and usability */
+.header-area .menu-trigger {
+  display: block !important;
+  cursor: pointer;
+  position: absolute;
+  top: 33px;
+  right: 40px;
+  width: 32px;
+  height: 40px;
+  z-index: 9999;
+  text-indent: -9999em;
+}
+
+.header-area .menu-trigger span,
+.header-area .menu-trigger span:before,
+.header-area .menu-trigger span:after {
+  background-color: #43ba7f;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+.header-area .menu-trigger span {
+  top: 16px;
+}
+
+.header-area .menu-trigger span:before {
+  content: "";
+  top: -10px;
+}
+
+.header-area .menu-trigger span:after {
+  content: "";
+  top: 10px;
+}
+
+.header-area .menu-trigger.active span {
+  background-color: transparent;
+}
+
+.header-area .menu-trigger.active span:before {
+  transform: translateY(6px) translateX(1px) rotate(45deg);
+  background-color: #ff511a;
+}
+
+.header-area .menu-trigger.active span:after {
+  transform: translateY(-6px) translateX(1px) rotate(-45deg);
+  background-color: #ff511a;
+}
+
+/* Responsive adjustments for header nav */
+@media (max-width: 767px) {
+  .header-area .main-nav .nav {
+    display: none;
+    width: 100%;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9998;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .header-area .main-nav .nav.show {
+    display: block;
+  }
+
+  .header-area .main-nav .nav li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header-area .main-nav .nav li a {
+    padding: 15px 20px;
+    color: #191a20 !important;
+    font-weight: 600;
+  }
+
+  .header-area .main-nav .nav li a:hover {
+    background-color: #ff511a !important;
+    color: #fff !important;
+  }
+
+  .header-area .main-nav .nav li.has-sub > a:after {
+    content: "▼";
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #191a20;
+  }
+
+  .header-area .main-nav .nav li.has-sub ul.sub-menu {
+    display: none;
+    position: static;
+    box-shadow: none;
+    background: #f7f7f7;
+  }
+
+  .header-area .main-nav .nav li.has-sub.open > ul.sub-menu {
+    display: block;
+  }
+
+  .header-area .main-nav .nav li.has-sub ul.sub-menu li a {
+    padding-left: 40px;
+    color: #191a20 !important;
+  }
+}
+
+/* Smooth accordion transitions */
+.accordion-body {
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+/* Lazy load images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  loading: lazy;
+}
+
+/* Optimize buttons for touch */
+.green-button a,
+.orange-button a {
+  padding: 14px 32px;
+  font-size: 16px;
+  border-radius: 8px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Improve accessibility focus styles */
+a:focus,
+button:focus {
+  outline: 3px solid #ff511a;
+  outline-offset: 2px;
+}
+
+/* Fix testimonial image size on small screens */
+@media (max-width: 767px) {
+  .testimonials .item img {
+    max-width: 80px;
+    right: 20px;
+    top: 20px;
+  }
+}

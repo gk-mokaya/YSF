@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>YSF - Youth Shield Foundation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/custom-responsive.css">
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="assets/images/logo.png" height="70px" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="our-services.html">Our Programs</a></li>
+                          <li class="scroll-to-section"><a href="about-us.html">About Us</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">Pages</a>
+                              <ul class="sub-menu">
+                                  <li><a href="about-us.html">About Us</a></li>
+                                  <li><a href="our-services.html">Our Services</a></li>
+                                  <li><a href="contact-us.html">Contact Us</a></li>
+                              </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="testimonials.html">Testimonials</a></li>
+                          <li><a href="donate.html">Donate</a></li>
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <button id="donateBtn" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background-color: #ff511a; color: white; border: none; padding: 12px 20px; border-radius: 5px; cursor: pointer;">Donate</button>
+
+  <!-- Donate Modal -->
+  <div id="donateModal" style="display:none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5);">
+    <div style="background-color: #fff; margin: 10% auto; padding: 20px; border-radius: 8px; width: 300px; position: relative;">
+      <span id="closeModal" style="position: absolute; top: 10px; right: 15px; font-size: 22px; font-weight: bold; cursor: pointer;">&times;</span>
+      <h3>Donate via M-Pesa</h3>
+      <form id="donateForm">
+        <label for="phone">Phone Number (2547XXXXXXXX):</label><br>
+        <input type="text" id="phone" name="phone" pattern="2547[0-9]{8}" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+        <label for="amount">Amount (KES):</label><br>
+        <input type="number" id="amount" name="amount" min="1" required style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+        <button type="submit" style="background-color: #43ba7f; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Pay</button>
+      </form>
+      <div id="donateMessage" style="margin-top: 10px;"></div>
+    </div>
+  </div>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="swiper-container" id="top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-01.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>Youth <em>Shield</em> Foundation<br>&amp; Protecting the youths <em>Empowering women</em></h2>
+                  <div class="div-dec"></div>
+                  <p>Mexant HTML5 Template is provided for free of charge. This layout is based on Boostrap 5 CSS framework. Anyone can download and edit for any professional website. Thank you for visiting TemplateMo website.</p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-02.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>Breaking the Chains of Drug Abuse – One Youth at a Times</h2>
+                  <div class="div-dec"></div>
+                  <p>You will see a bunch of free CSS templates when you search on Google. TemplateMo website is probably the best one because it is 100% free. It does not ask you anything in return. You have a total freedom to use any template for any purpose.</p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/slide-03.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2>At YSF, we empower young people with education, support, and community to build a drug-free future. Join us in the fight!</h2>
+                  <div class="div-dec"></div>
+                  <p>When you browse through different tags on TemplateMo website, you can see a variety of CSS templates which are responsive website designs for different individual needs. Please tell your friends about our website. Thank you.</p>
+                  <div class="buttons">
+                    <div class="green-button">
+                      <a href="#">Discover More</a>
+                    </div>
+                    <div class="orange-button">
+                      <a href="#">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+      <div>
+        <div class="section-heading">
+          <h4>Welcome to Youth Shield Foundation</h4>
+        </div>
+      </div>
+      <div class="container">
+            <p class="p1">We are a non-profit organization dedicated to empowering young people and their families to overcome the challenges of drug abuse. Our mission is to create a drug-free future for our youth through education, support, and community engagement.</p>
+            <p class="p1">Join us in our fight against drug abuse and help us build a brighter future for our youth.</p>
+          </div>
+  </section>
+  
+
+  <section class="services" id="services">
+    <div class="section-heading">
+            <h4>Programs and Initiatives</h4>
+          </div>    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archive"></i>
+            <h4>Awareness Campaigns</h4>
+            <p>Drug-Free School Programs Workshops in 100+ schools annually.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-cloud"></i>
+            <h4>Rehabilitation Support</h4>
+            <p>Free Counseling Hotline Call +2547 90 886 755 <br> Rehab Scholarships Financial aid for treatment.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-charging-station"></i>
+            <h4>Community Outreach</h4>
+            <p>Big Brother/Sister Mentorship Pairing recovered addicts. <br> Parental Workshops on "How to Spot Early Signs of Drug Use."</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-suitcase"></i>
+            <h4>Advocacy & Policy Change</h4>
+            <p>Lobbying for stricter drug laws in partnership with lawmakers.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-archway"></i>
+            <h4>Social Media cleansing</h4>
+            <p>StayClean Challenge Viral TikTok, Instagram, Youtube, Twitter and  Facebook campaigns.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i class="fas fa-puzzle-piece"></i>
+            <h4>24/7 Support</h4>
+            <p>Reach out assistance anytime. Our staffs are always available</p>
+          </div>
+          
+        </div>
+        <div class="buttons">
+            <div class="green-button">
+             <br>
+              <a href="our-services.html">Explore More on Programs </a>
+            </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h4>Business <em>Solutions</em> and <strong>Crypto</strong> Investments</h4>
+        </div>
+        <div class="col-lg-7">
+          <div class="buttons">
+            <div class="green-button">
+              <a href="#">Discover More</a>
+            </div>
+            <div class="orange-button">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="left-image">
+            <img src="assets/images/calculator-image.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="section-heading">
+            <h6>Your Freedom</h6>
+            <h4>Get a Financial Plan</h4>
+          </div>
+          <form id="calculate" action="" method="get">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="name">Your Name</label>
+                  <input type="name" name="name" id="name" placeholder="" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="email">Your Email</label>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="subject">Subject</label>
+                  <input type="subject" name="subject" id="subject" placeholder="" autocomplete="on" >
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="chooseOption" class="form-label">Your Reason</label>
+                  <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
+                      <option selected>Choose an Option</option>
+                      <option type="checkbox" name="option1" value="Online Banking">Online Banking</option>
+                      <option value="Financial Control">Financial Control</option>
+                      <option value="Yearly Profit">Yearly Profit</option>
+                      <option value="Crypto Investment">Crypto Investment</option>
+                  </select>
+              </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="orange-button">Submit Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>Testimonials</h6>
+            <h4>What They Say</h4>
+          </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”</p>
+              <h4>David Eigenberg</h4>
+              <span>CEO of Mexant</span>
+              <div class="right-image">
+                <img src="assets/images/testimonials-01.jpg" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
+              <h4>Andrew Garfield</h4>
+              <span>CTO of Mexant</span>
+              <div class="right-image">
+                <img src="assets/images/testimonials-01.jpg" alt="">
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa fa-quote-left"></i>
+              <p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
+              <h4>George Lopez</h4>
+              <span>Crypto Manager</span>
+              <div class="right-image">
+                <img src="assets/images/testimonials-01.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-6">
+          <div class="item">
+            <img src="assets/images/client-01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2025 Youth Shield Foundation, Inc. All Rights Reserved. 
+          
+          <br>Designed by <a title="CSS Templates" rel="sponsored" href="kskdata254@gmail.com" target="_blank">gk-mokaya</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }      
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+
+      // Donate button and modal logic
+      const donateBtn = document.getElementById('donateBtn');
+      const donateModal = document.getElementById('donateModal');
+      const closeModal = document.getElementById('closeModal');
+      const donateForm = document.getElementById('donateForm');
+      const donateMessage = document.getElementById('donateMessage');
+
+      donateBtn.addEventListener('click', () => {
+        donateModal.style.display = 'block';
+        donateMessage.innerText = '';
+        donateForm.reset();
+      });
+
+      closeModal.addEventListener('click', () => {
+        donateModal.style.display = 'none';
+      });
+
+      window.addEventListener('click', (event) => {
+        if (event.target === donateModal) {
+          donateModal.style.display = 'none';
+        }
+      });
+
+      donateForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        donateMessage.innerText = 'Processing payment...';
+
+        const phone = document.getElementById('phone').value;
+        const amount = document.getElementById('amount').value;
+
+        try {
+          const response = await fetch('/api/donate', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ phone_number: phone, amount: amount })
+          });
+          const data = await response.json();
+          if (response.ok) {
+            donateMessage.innerText = 'Payment request sent successfully. Please check your phone to complete the payment.';
+          } else {
+            donateMessage.innerText = 'Error: ' + (data.error || 'Failed to send payment request.');
+          }
+        } catch (error) {
+          donateMessage.innerText = 'Error: ' + error.message;
+        }
+      });
+    </script>
+  </body>
+</html>
